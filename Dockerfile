@@ -1,7 +1,7 @@
 # Based on the GitHub pages stack (Ruby, Jekyll, Liquid, Sass)
 # Includes additional Jekyll plugins.
 
-FROM ruby:2.5.0
+FROM ruby:2.6.0
 
 LABEL author="Lakruzz <lars@lakruzz.com>"
 LABEL maintainer="Lakruzz <lars@lakruzz.com>"
@@ -29,4 +29,5 @@ ENV LC_ALL=en_US.UTF-8
 
 RUN gem install \
       github-pages \
+      jekyll_pocket \
       jekyll-responsive-image
